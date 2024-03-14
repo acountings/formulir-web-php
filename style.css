@@ -1,0 +1,59 @@
+:root{
+--primary:rgb(19, 117, 214);
+--secondary:#fdfdfd;
+--third:#eaf3f5;
+--fourth:#b3b3b4a1;
+}
+
+html, 
+body{
+    height: 100%;
+    background-color:var(--secondary) !important;
+}
+
+.global-container{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary);
+}
+
+.login-form{
+    width: 380px;
+    height: 450px;
+    padding: 20px;
+    background-color: var(--third) !important;
+    border-radius: 10px !important;
+}
+
+input[type='email'],
+input[type='password']{
+    background: var(--secondary);
+    color:var(--primary);
+    border:rgb(99, 14, 255);
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+input[type='email']:focus,
+input[type='password']:focus{
+ outline: none;
+ border: none;
+ background : var(--fourth);
+ color: #ffffff;
+ margin: 0;
+}
+
+.card-title{
+    font-weight: 900;
+    padding-top: 20px;
+}
+
+.btn{
+    background-color: var(--primary);
+    color: var(--secondary) !important;
+    transform: translateY(10px);
+    font-size: 14px;
+    border-radius: 10px !important;
+}
