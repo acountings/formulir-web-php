@@ -5,7 +5,7 @@ include 'config/koneksi.php';
 include 'layout/header.php';
 // CHECK TOMBOL LOGIN
 if(isset($_POST['login'])) {
-$email = mysqli_real_escape_string($db, $_POST['email']);
+$email = mysqli_real_escape_string($db, $_POST['username']);
 $password = mysqli_real_escape_string($db, $_POST['password']);
 
 
